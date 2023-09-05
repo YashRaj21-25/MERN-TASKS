@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 7</title>
+    <style>
+        * {
+            text-decoration: none;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .nav-container {
+            border: 2px solid black;
+            width: 245px;
+            padding: 10px;
+            float: left;
+            margin-right: 250px;
+        }
+        .horizontal-navbar {
+            border: 2px solid black;
+            width: 400px;
+            padding: 10px;
+            float: left;
+            margin-right: 150px; /* Adjust the margin here */
+        }
+        .horizontal-navbar li {
+            float: left;
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            border-right: 2px solid blue;
+        }
+        nav {
+            font-size: 30px;
+            background-color: rgba(22, 206, 206, 0.502);
+        }
+        #home {
+            background-color: orange;
+            border-color: orange;
+            color: white;
+        }
+        #home2 {
+            background-color: grey;
+            border-color: grey;
+            color: white;
+        }
+        .c1 {
+            border-color: aqua;
+            color: blue;
+        }
+        .c2 {
+            border-color: aqua;
+            color: blue;
+            background-color: lightgrey;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 10px;
+            display: block;
+        }
+        h3 {
+            margin-left: 20px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        #last {
+            background-color: lightgrey;
+            color: lightgrey;
+            border: none;
+        }
+        #right{
+            margin-left: 590px;
+        }
+    </style>
+</head>
+<body>
+<h1>TASK 7</h1> <br> <br> <br>
+<h3>Vertical Navigation Bar</h3> <br>
+<div class="nav-container">
+    <nav>
+        <ul>
+            <li id="home">Home</li>
+            <li class="c1">Java</li>
+            <li class="c1">CSS</li>
+            <li class="c1">HTML</li>
+            <li class="c1">Bootstrap</li>
+        </ul>
+    </nav>
+</div>
+<h3 id="right">Horizontal Navigation Bar</h3>
+<div class="horizontal-navbar">
+    <nav>
+        <ul>
+            <li id="home2">Home</li>
+            <li class="c2">Java</li>
+            <li class="c2">HTML</li>
+            <li class="c2">CSS</li>
+            <li class="c2" id="last">Hellooo</li>
+        </ul>
+    </nav>
+</div>
+<div class="clearfix"></div> 
+</body>
+</html>
